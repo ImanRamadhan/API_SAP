@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:p1="urn:pertamina:osds:BapiPackageMultiClient" xmlns:p2="urn:pertamina:osds:BapiPackageTesting" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="mi_osReadTableMC" targetNamespace="urn:pertamina:osds:BapiPackageMultiClient" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_mi_osReadTableMC" />
+  <wsdl:types>
+    <xsd:schema xmlns="urn:pertamina:osds:BapiPackageTesting" targetNamespace="urn:pertamina:osds:BapiPackageTesting" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="urn:pertamina:osds:BapiPackageMultiClient" />
+      <xsd:element name="mt_ReadTableMC_Request" type="p1:dt_ReadTableMC_Request" />
+      <xsd:element name="mt_ReadTableMC_Response" type="p1:dt_ReadTableMC_Response" />
+    </xsd:schema>
+    <xsd:schema xmlns="urn:pertamina:osds:BapiPackageMultiClient" targetNamespace="urn:pertamina:osds:BapiPackageMultiClient" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:complexType name="dt_ReadTableMC_Request">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Request data type for Read Table</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">c3d465ef62bc11e68f310000005cd05a</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="CLIENT" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">8fd9b923836611e5a6687824afc7cccd</xsd:appinfo>
+              <xsd:documentation>SAP Client</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="QUERY_TABLE" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">c422b6709aaa11ddb01b001f3c3ef0a4</xsd:appinfo>
+              <xsd:documentation>Name of table to be read</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="DELIMITER" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">c422b6719aaa11dda592001f3c3ef0a4</xsd:appinfo>
+              <xsd:documentation>Delimiter between field contents in output to DATA. SPACE - no delimiter used; field contents in DATA are continuous</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="NO_DATA" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">c422b6729aaa11ddc274001f3c3ef0a4</xsd:appinfo>
+              <xsd:documentation>NO_DATA &lt;&gt; SPACE suppresses the output of field contents in DATA. Only the definition of the table is provided in the parameter FIELDS</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="ROWSKIPS" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">c422b6739aaa11ddb786001f3c3ef0a4</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="ROWCOUNT" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">c422b6749aaa11dd8fd9001f3c3ef0a4</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" name="OPTIONS">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">c422b6759aaa11ddb3d1001f3c3ef0a4</xsd:appinfo>
+              <xsd:documentation>Selection criteria for reading table lines. Only valid WHERE clauses (cf. ABAP/4 SQL) should be passed. Otherwise an exception is raised</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="TEXT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c422b6769aaa11dd9200001f3c3ef0a4</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element maxOccurs="unbounded" name="FIELDS">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">c422b6779aaa11ddac57001f3c3ef0a4</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="FIELDNAME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c422b6789aaa11ddafa1001f3c3ef0a4</xsd:appinfo>
+                    <xsd:documentation>Field Name</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="dt_ReadTableMC_Response">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="EN">Response data type for Read table</xsd:documentation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">9f64447c842e11e590020000005cd05a</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="CLIENT" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">ad2c02b8836611e585f57824afc7cccd</xsd:appinfo>
+              <xsd:documentation>SAP Client (Check)</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="ERROR_CODES" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">422c88109aac11dd9049001f3c3ef0a4</xsd:appinfo>
+              <xsd:documentation>ERROR_CODES</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="FIELDS">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">422c88119aac11dd84b7001f3c3ef0a4</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="FIELDNAME" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">422c88129aac11dda186001f3c3ef0a4</xsd:appinfo>
+                    <xsd:documentation>Field Name</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="OFFSET" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">422c88139aac11dd896a001f3c3ef0a4</xsd:appinfo>
+                    <xsd:documentation>Offset of a field</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="LENGTH" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">422c88149aac11dd820b001f3c3ef0a4</xsd:appinfo>
+                    <xsd:documentation>Length (No. of Characters)</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="TYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">422c88159aac11ddca96001f3c3ef0a4</xsd:appinfo>
+                    <xsd:documentation>ABAP data type (C,D,N,...)</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="FIELDTEXT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">422c88169aac11dd9ca1001f3c3ef0a4</xsd:appinfo>
+                    <xsd:documentation>Short Description of Repository Objects</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="DATA">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">422c88179aac11ddafe0001f3c3ef0a4</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="WA" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">422c88189aac11ddcc85001f3c3ef0a4</xsd:appinfo>
+                    <xsd:documentation>Field values separated by delimiter defined in Input parameter</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="mt_ReadTableMC_Request">
+    <wsdl:documentation />
+    <wsdl:part name="mt_ReadTableMC_Request" element="p2:mt_ReadTableMC_Request" />
+  </wsdl:message>
+  <wsdl:message name="mt_ReadTableMC_Response">
+    <wsdl:documentation />
+    <wsdl:part name="mt_ReadTableMC_Response" element="p2:mt_ReadTableMC_Response" />
+  </wsdl:message>
+  <wsdl:portType name="mi_osReadTableMC">
+    <wsdl:documentation />
+    <wsdl:operation name="mi_osReadTableMC">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_mi_osReadTableMC" />
+      </wsp:Policy>
+      <wsdl:input message="p1:mt_ReadTableMC_Request" />
+      <wsdl:output message="p1:mt_ReadTableMC_Response" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="mi_osReadTableMCBinding" type="p1:mi_osReadTableMC">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="mi_osReadTableMC">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="mi_osReadTableMCService">
+    <wsdl:port name="mi_osReadTableMCPort" binding="p1:mi_osReadTableMCBinding">
+      <address location="http://piwddmz1.pertamina.com:8163/sap/xi/engine?type=entry&amp;version=3.0&amp;Sender.Service=OSDS_P&amp;Interface=urn%3Apertamina%3Aosds%3ABapiPackageMultiClient%5Emi_osReadTableMC" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,15 @@
+D:\DATA IMAN\PROJECT CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\bin\Debug\APIHost2Host.Helper.dll
+D:\DATA IMAN\PROJECT CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\bin\Debug\APIHost2Host.Helper.pdb
+D:\DATA IMAN\PROJECT CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\bin\Debug\Newtonsoft.Json.dll
+D:\DATA IMAN\PROJECT CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\obj\Debug\APIHost2Host.Helper.csproj.CoreCompileInputs.cache
+D:\DATA IMAN\PROJECT CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\obj\Debug\APIHost2Host.Helper.csproj.CopyComplete
+D:\DATA IMAN\PROJECT CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\obj\Debug\APIHost2Host.Helper.dll
+D:\DATA IMAN\PROJECT CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\obj\Debug\APIHost2Host.Helper.pdb
+D:\DATA IMAN\SOURCE CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\bin\Debug\APIHost2Host.Helper.dll
+D:\DATA IMAN\SOURCE CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\bin\Debug\APIHost2Host.Helper.pdb
+D:\DATA IMAN\SOURCE CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\bin\Debug\Newtonsoft.Json.dll
+D:\DATA IMAN\SOURCE CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\obj\Debug\APIHost2Host.Helper.csproj.AssemblyReference.cache
+D:\DATA IMAN\SOURCE CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\obj\Debug\APIHost2Host.Helper.csproj.CoreCompileInputs.cache
+D:\DATA IMAN\SOURCE CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\obj\Debug\APIHost2Host.Helper.csproj.CopyComplete
+D:\DATA IMAN\SOURCE CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\obj\Debug\APIHost2Host.Helper.dll
+D:\DATA IMAN\SOURCE CODE\API LTC H2H\APIHost2host\APIHost2Host.Helper\obj\Debug\APIHost2Host.Helper.pdb

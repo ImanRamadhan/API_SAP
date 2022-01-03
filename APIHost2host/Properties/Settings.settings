@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="APIHost2host.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="APIHost2host_GR_Services_mi_os_gr_pipsService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://dev02xi.pertamina.com:8000/sap/xi/engine?type=entry&amp;version=3.0&amp;Sender.Service=PIPS_D&amp;Interface=urn%3Apertamina%3Agr%5Emi_os_gr_pips</Value>
+    </Setting>
+    <Setting Name="APIHost2host_PO_Services2_mi_os_poService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://dev02xi.pertamina.com:8000/sap/xi/engine?type=entry&amp;version=3.0&amp;Sender.Service=PIPS_D&amp;Interface=urn%3Apertamina%3Apo%5Emi_os_po</Value>
+    </Setting>
+    <Setting Name="APIHost2host_PO_InqService_mi_os_GetPOService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://piwddmz1.pertamina.com:8163/sap/xi/engine?type=entry&amp;version=3.0&amp;Sender.Service=PIPS_P&amp;Interface=urn%3Apertamina%3Apo%5Emi_os_GetPO</Value>
+    </Setting>
+    <Setting Name="APIHost2host_PR_InqServices_mi_os_GetPRService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://piwddmz1.pertamina.com:8163/sap/xi/engine?type=entry&amp;version=3.0&amp;Sender.Service=PIPS_P&amp;Interface=urn%3Apertamina%3Apr%5Emi_os_GetPR</Value>
+    </Setting>
+    <Setting Name="SCMONLINE_Web_mi_os_rfqpo_web_mi_os_rfqpoService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://piwddmz1.pertamina.com:8163/sap/xi/engine?type=entry&amp;version=3.0&amp;Sender.Service=PIPS_P&amp;Interface=urn%3Apertamina%3Arfq%5Emi_os_rfqpo</Value>
+    </Setting>
+    <Setting Name="APIHost2host_RFQ_Services_mi_os_rfqpoService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://dev02xi.pertamina.com:8000/sap/xi/engine?type=entry&amp;version=3.0&amp;Sender.Service=PIPS_D&amp;Interface=urn%3Apertamina%3Arfq%5Emi_os_rfqpo</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

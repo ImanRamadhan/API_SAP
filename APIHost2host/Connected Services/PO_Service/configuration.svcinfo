@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;mi_osReadTableMCBinding&quot; /&gt;" bindingType="basicHttpBinding" name="mi_osReadTableMCBinding" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://piwddmz1.pertamina.com:8163/sap/xi/engine?type=entry&amp;amp;version=3.0&amp;amp;Sender.Service=OSDS_P&amp;amp;Interface=urn%3Apertamina%3Aosds%3ABapiPackageMultiClient%5Emi_osReadTableMC&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;mi_osReadTableMCBinding&quot; contract=&quot;PO_Service.mi_osReadTableMC&quot; name=&quot;mi_osReadTableMCPort&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://piwddmz1.pertamina.com:8163/sap/xi/engine?type=entry&amp;amp;version=3.0&amp;amp;Sender.Service=OSDS_P&amp;amp;Interface=urn%3Apertamina%3Aosds%3ABapiPackageMultiClient%5Emi_osReadTableMC&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;mi_osReadTableMCBinding&quot; contract=&quot;PO_Service.mi_osReadTableMC&quot; name=&quot;mi_osReadTableMCPort&quot; /&gt;" contractName="PO_Service.mi_osReadTableMC" name="mi_osReadTableMCPort" />
+  </endpoints>
+</configurationSnapshot>
