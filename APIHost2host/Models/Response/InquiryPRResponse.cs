@@ -12,10 +12,6 @@ namespace APIHost2host.Models.Response
         public List<PRHeaderText> PRHEADERTEXT { get; set; }
         public List<PRItem> PRITEM { get; set; }
 
-        public InquiryPRResponse()
-        {
-
-        }
     }
 
     public class PRHeaderText
@@ -25,6 +21,25 @@ namespace APIHost2host.Models.Response
         public string TEXT_LINE { get; set; }
     }
 
+    public class PRReqResponse
+    {
+        public string PREQ_NO { get; set; }
+        public string PR_TYPE { get; set; }
+        public string PREQ_NAME { get; set; }
+        public string ZZMMAUTHNAME { get; set; }
+        public string ZZMMAUTHPOS { get; set; }
+        public List<PRReqItem> PR_REQ_ITEM { get; set; }
+        public string GRAND_TOTAL { get; set; }
+
+    }
+
+    public class PRReqItem
+    {
+        public string QUANTITY { get; set; }
+        public string PREQ_PRICE { get; set; }
+        public string TOTAL_PRICE { get; set; }
+
+    }
     public class PRItem
     {
         public string PREQ_ITEM { get; set; }

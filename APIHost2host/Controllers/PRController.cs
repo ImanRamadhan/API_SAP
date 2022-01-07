@@ -29,5 +29,14 @@ namespace APIHost2host.Controllers
 
             return Request.CreateResponse<GeneralActionResponse<InquiryPRResponse>>(InquiryPR.inquiryPR(result, PRNumber));
         }
+
+        [HttpGet]
+        [ResponseType(typeof(GeneralActionResponse<PRReqResponse>))]
+        public HttpResponseMessage inquiryREQ(string PRNumber)
+        {
+            var result = new GeneralActionResponse<PRReqResponse>();
+
+            return Request.CreateResponse<GeneralActionResponse<PRReqResponse>>(InquiryREQ.inquiryREQ(result, PRNumber));
+        }
     }
 }
